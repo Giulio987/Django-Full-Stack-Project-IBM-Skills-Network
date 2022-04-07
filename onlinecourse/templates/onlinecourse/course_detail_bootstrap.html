@@ -57,8 +57,8 @@
                 Show/hide questions 
             </button>
             <br>
-            <form id="questionform" action="point to a submit view" method="post">
-                        <div class ="card-colmn-vertical" id="exam">
+            <form id="questionform" action="submit/" method="post">
+                    <div class ="card-colmn-vertical" id="exam">
                            
                         {% for question in course.question_set.all%}
 
@@ -78,7 +78,8 @@
                             </div>
                         </div>
                         {% endfor %}
-                    <input class="btn btn-success btn-block" type="submit" value="Submit">
+                        <input class="btn btn-success btn-block" type="submit" value="Submit">
+                    </div>
             </form> 
             {% endif %}
     </div>
